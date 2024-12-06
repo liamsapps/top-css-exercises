@@ -1,0 +1,19 @@
+.odd {
+    background-color: #ff1493; /* deeppink */
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#second {
+    color: rgb(173, 216, 230); /* lightblue */
+    font-size: 36px;
+}
+
+.special {
+    font-size: 24px;
+}
+
+#fourth {
+    background-color: hsl(120, 73%, 75%); /* lightgreen */
+    font-size: 24px;
+    font-weight: 700; /* bold */
+}
