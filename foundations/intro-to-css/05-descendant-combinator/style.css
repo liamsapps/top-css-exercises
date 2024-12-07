@@ -1,0 +1,16 @@
+/* option #1 using only type for the descendant combinator */
+/*div p {*/
+/* option #2 using type and class for the descendant combinator */
+/*div .text {*/
+/* option #3 using class and type for the descendant combinator */
+.container p {
+    background-color: rgb(255, 255, 0); /* yellow */
+    color: #ff0000; /* red */
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+    
+
