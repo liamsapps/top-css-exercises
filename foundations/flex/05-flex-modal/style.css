@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /* ADDED */
+  display: flex;
+  padding: 6px;
 }
 
 .icon {
@@ -33,13 +36,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* ADDED */
+  margin: 8px;
 }
+
+/* ADDED */
+.header {
+  font-size: 20px;
+  font-weight: bold;
+}  
+
+.container {
+  flex: 1;
+}
+
+.container > * {
+  padding: 8px;
+}
+
+.box {
+  flex: 1;
+  display: flex;
+  gap: 6px;
+}
+
+.box.one {
+  justify-content: space-between;
+}  
+
+/* END OF ADDITIONS */
 
 .close-button {
   background: #eee;
   border-radius: 50%;
-  color: #888;
-  font-weight: 400;
+  /* CHANGED */
+  color: #404040;
+  /* color: #888; */
+  font-weight: 900;
+  /* END OF CHANGES */
   font-size: 16px;
   height: 24px;
   width: 24px;

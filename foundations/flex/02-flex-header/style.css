@@ -1,6 +1,42 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /* ADDED */
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding: 8px;
+}
+
+.left-links, .right-links {
+  /* needed to take up available space in header */
+  /* then, flex-start worked using ALL available space, not just space alloted for item content !!! */
+  width: 100%;
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  /* use to accomodate screen resizing */
+  /* otherwise, flex items disappear as screen shrinks !!! */
+  /* flex-wrap: wrap; */
+}
+
+.left-links {
+  justify-content: flex-start;
+}
+
+.right-links {
+  justify-content: flex-end;
+}
+
+ul {
+  /* this removes the dots on the list items*/
+  list-style-type: none;
+  /* ADDED */
+  display: flex; 
+  gap: 16px;
+  /* to deal with ul's default margin/padding */
+  margin: 0px;
+  padding: 0px;
 }
 
 .logo {
@@ -11,11 +47,6 @@
   padding: 4px 32px;
 }
 
-ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
-}
-
 a {
   font-size: 22px;
   background: white;
@@ -23,3 +54,4 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+

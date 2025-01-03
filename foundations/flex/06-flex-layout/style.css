@@ -3,7 +3,8 @@
 body {
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  /* CHANGED to allow scrolling */
+  /* overflow: hidden; */
   font-family: Roboto, sans-serif;
 }
 
@@ -16,6 +17,10 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /* ADDED */
+  cursor: pointer;
+  margin: 8px 2px;
+  padding: 6px 8px;
 }
 
 input {
@@ -24,3 +29,61 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* ADDED */
+ul {
+  margin-left: 0px; 
+  padding-left: 0px;
+}
+
+.header {
+  display: flex;
+}
+
+.header > .left-links,
+.footer > .left-links {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  margin-left: 16px;
+}
+
+.header > .right-links,
+.footer > .right-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  background-color: #eeeeee;
+  flex-shrink: 0;
+}
+
+/* used to force footer to bottom of page */
+.filler {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #808080;  /* rgb(128, 128, 128) */
+  text-decoration: none;
+}
+
+/* END OF ADDITIONS */

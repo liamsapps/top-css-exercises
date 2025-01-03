@@ -12,7 +12,30 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /* ADDED */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 8px;
 }
+
+/* ADDED */
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* padding: 5px; */
+}
+
+/* NO WORK, flex items disappear when screen shrunk too much */
+/* .left {
+  min-width: 370px;
+} */
+
+/* NO WORK, flex items disappear when screen shrunk too much */
+/* .right {
+  min-width: 230px;
+} */
 
 .profile-image {
   background: rebeccapurple;
@@ -45,4 +68,13 @@ a {
 
 ul {
   list-style-type: none;
+  /* ADDED */
+  display: flex;
+  /* NOT NEEDED, remove ul's default margin/padding !!! */
+  /* justify-content: flex-start; */
+  /* align-items: center;
+  flex-wrap: wrap; */
+  margin: 0px;
+  padding: 0px;
+  gap: 16px;
 }
